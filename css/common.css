@@ -1,0 +1,35 @@
+span,div{position:relative}
+/*#header,#content,#footer,#wrapper {width:800px; margin:0px auto;}*/
+#header,#content,#footer,#wrapper {width:100%; margin:0px auto;}
+.menu {}
+.menu>div {text-align:center}
+* {font-family:"Times New Roman", Times, serif;font-size:15px;}
+input, select {border-radius:6px; margin:1px; border:2px solid #bbbbbb; outline:none;}
+input[type=text],select{width:100%}
+select{width:100%; font-size:18px}
+input[type=button]{background-color:#d0d0d0}
+select:focus,input:focus	{background-color:#efefef; }
+option:nth-child(2n) { background-color:rgb(220,220,220);}
+option:nth-child(2n+1) {background-color:rgb(210,210,210);}
+.message {z-index:1000;border:0px solid black; border-radius:3px;}
+.row {margin:0px;padding:0px;}
+.heading {position:absolute;top:-15px;left:130px;background-color:#ffffff; font-size:20px;padding:0px;}
+.section {border:0.5px solid #efefef; border-radius:20px; margin:15px 0px;padding:10px 0px;}
+.clear {clear:both;}
+iframe {width:100%; border:0px; height:350px}
+
+.text {display:none;}
+
+
+@media (max-width:700px)
+{
+	.heading {left:30px;}
+   .conditional-clear {clear:both;}
+   .birthday-container {width:100%; margin:0px; padding:0px;}
+   .menu {font-size:13px;}
+}
+
+@media (min-width:800px)
+{
+   #header,#content,#footer,#wrapper {width:1000px; margin:0px auto;}
+}
